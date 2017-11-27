@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+	<meta charset="UTF-8">
+	<title>Translator</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/hover-min.css" />
+	<link rel="stylesheet" href="css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	
+
+	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+
+	<!-- Loader -->
+	<div id="loader">
+		<h1 class="loader">
+		  <span class="loaderTxt let1">T</span>  
+		  <span class="loaderTxt let2">r</span>  
+		  <span class="loaderTxt let3">a</span>  
+		  <span class="loaderTxt let4">n</span>  
+	 	  <span class="loaderTxt let5">s</span>  
+		  <span class="loaderTxt let6">l</span>  
+		  <span class="loaderTxt let7">a</span>  
+		  <span class="loaderTxt let8">t</span>  
+		  <span class="loaderTxt let9">o</span>  
+		  <span class="loaderTxt let10">r</span>  
+		</h1>
+	</div>
+
+	
+
+		<!-- Main-Navigation -->
+	
+	<section id="main-navigation" class="navbar-fixed-top">
+	    <div id="navigation">
+	        <nav class="navbar navbar-default" role="navigation">
+	            <div class="container">
+	                <div class="row">
+					
+	                    <!--  Brand and toggle get grouped for better mobile display -->
+	                    <div class="col-md-3 col-sm-12 col-xs-12">
+		                    <div class="navbar-header">
+		                        
+		                        <a class="navbar-brand logo col-xs-10" href="index.html">
+		                            <img src="images/logo.png" alt="logo" class="img-responsive"> 
+		                        </a>
+		                        <div class="col-xs-2 text-center">
+		                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-collapse-navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!--  Collect the nav links, forms, and other content for toggling --> 
+	                    <div class="col-md-9 col-sm-12 col-xs-12 pull-right">
+	                    <div class="col-md-9 col-sm-12 col-xs-12 pull-right">
+						
+						
+					
+		                    <div class="collapse navbar-collapse nav-collapse" id="fixed-collapse-navbar">
+		                        <ul class="nav navbar-nav cl-effect-1">
+		            
+		                           <li><a href="#human-translation"" data-hover="Services">Services</a> </li>
+		                            <li><a href="translators.html" data-hover="Translators">Translators</a> </li>
+		                        </ul>
+						
+		                        <div class = "btn-group translate-dropdown">
+								   <button type = "button" class = "btn btn-translate dropdown-toggle" data-toggle = "dropdown">
+								      <span class="flag-image">
+								      	<img src="images/uk.png" alt="flag">
+								      </span>
+								      Eng								      
+								   </button>
+								   <ul class = "dropdown-menu" role = "menu">
+								      <li>										
+								      	<a href = "#">
+											<img class="trnslate-img" src="images/saudia.png" alt="flag">
+								      		Saudi Arabia
+								      	</a>
+								      </li>
+								      <li>										
+								      	<a href = "#">
+											<img class="trnslate-img" src="images/china.png" alt="flag">
+								      		China
+								      	</a>
+								      </li>
+								      <li>										
+								      	<a href = "#">
+											<img class="trnslate-img" src="images/rusia.png" alt="flag">
+								      		Rusia
+								      	</a>
+								      </li>
+								   </ul>								   
+								</div>
+								
+									<div class="user-acces pull-right">
+									<a href="login.html">Login</a>
+									<span>&#47;</span>
+									<a href="register.html">Register</a>
+								</div>
+								
+		                    </div>
+					
+	                    </div>
+	                </div>
+	            </div>
+				
+	        </nav>
+	    </div>
+	</section>
+
+	<!-- Main-Navigation -->
+	
+	<!-- Quick Translator -->
+	
+	<section id="quick-translator">
+		<div class="container">
+			<div class="row">
+				<div id="translator">
+					<form class="translation-form">
+						<div class="col-sm-6">						
+							<div class="language-bar">
+								<select name="lang-detection" id="lang-detection" class="form-control selectpicker">
+								<option value="Input Language">Input Language</option>
+								<option value="Chinese">Chinese</option>
+								<option value="Finnish">Finnish</option>
+								<option value="arabic">Arabic</option>
+								<option value="english">English</option>
+								<option value="rusian">Rusian</option>						  	
+								</select>		
+								
+								<button  id="detect_lan" type="button" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s">
+								detect_language
+								</button> 
+							
+								<button type="button" id="change_lan"   style="padding: 16px 10px;" class="btn btn-swap pull-right">
+								<i class="fa fa-long-arrow-right swap-right"></i> 
+								<i class="fa fa-long-arrow-left swap-left"></i>
+								</button>
+						  	</div>
+							
+							<div class="language-area">
+								<textarea class="form-control wow fadeIn" data-wow-duration="0.5s" name="lang-input" id="lang-input" rows="10"></textarea>
+							</div>
+							 <p class="upload-info wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
+						  		Type text or a website address or
+						  		<input type="file" name="file-1" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
+								<label for="file-1"><span>Upload a Document</span></label>
+						  	</p>
+							
+						</div>
+
+
+						<div class="col-sm-6">
+							<div class="language-bar">
+							  
+								<button  id="clear_lan" type="button" style="margin-left: 16px; margin-right: 259px" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s" pull-right>
+									clear
+								</button> 
+
+								<select name="lang-detection"  id="outPutLanguage" class="form-control selectpicker">
+									<option value="Output Language">Output Language</option>
+									<option value="Chinese">Chinese</option>
+									<option value="Finnish">Finnish</option>
+									<option value="arabic">Arabic</option>
+									<option value="english">English</option>
+									<option value="rusian">Rusian</option>						  	
+								</select>
+						  	</div>
+							
+						  	<div class="language-area">
+						  		<textarea class="form-control wow fadeIn" data-wow-duration="0.5s" name="lang-output" id="lang-output" rows="10"></textarea>
+						  	</div>
+							
+							 <p class="upload-info wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
+								<button  id="down_load" type="button" style="margin-left: 200px" class="btn btn-green btn-instant-translate wow fadeIn small-button" data-wow-duration="0.5s">
+								Download</button>
+							</p>
+					
+						</div>
+						
+						<div class="clearfix"></div>
+						<div class="text-center translate-option">
+							<button  id="translation_button" type="button" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s">
+								Translate
+							</button>
+						</div>	
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Quick Translator -->
+
+
+
+
+
+	<!-- Human Translation -->
+	<section id="human-translation" class="module parallax parallax-2">
+		<div class="container">
+			<div class="row text-center">
+				<h1 class="section-heading wow fadeInDown" data-wow-duration="0.5s">Human Translation Services</h1>
+				<p class="section-desc wow fadeIn" data-wow-duration="0.5s">
+					empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco. Duis autem vel eum iriure dolor in hendrerit in vulputate velit. 
+				</p>
+				<div class="section-seperator">
+					<span></span>
+				</div>
+			</div>
+			<div class="row">
+				<div id="accordion-section">
+					<div class="col-md-6 col-sm-5">
+						<img class="img-responsive humn-translation-img" src="images/desktop-img.png" alt="computer Image">
+					</div>
+					<div class="col-md-6 col-sm-7">						
+						<div class="info-accordion">
+						    <div class="panel-group" id="accordion">
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						                    	<i class="fa fa-globe"></i>
+						                    	Global Network of Professional Translators
+						                    </a>
+						                </h4>
+						            </div>
+						            <div id="collapseOne" class="panel-collapse collapse in">
+						                <div class="panel-body">
+						                    <p>
+						                    	We offer translation work from 20 countrieds around the world.
+						                    </p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						                    	<i class="fa fa-file"></i>
+						                    	Multiple File Formats
+						                    </a>
+						                </h4>
+						            </div>
+						            <div id="collapseTwo" class="panel-collapse collapse">
+						                <div class="panel-body">
+						                    <p>
+						                    	We can handle most of the format of documents.
+						                    </p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+						                    	<i class="fa fa-clock-o"></i>
+						                    	24/7 Customer Service
+						                    </a>
+						                </h4>
+						            </div>
+						            <div id="collapseThree" class="panel-collapse collapse">
+						                <div class="panel-body">
+						                    <p>
+						                    	You can order through our system anytime
+						                    </p>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+					</div>
+					<div class="text-center">
+						<a href="#translation-steps" class="btn btn-gray">
+							Get Started Now
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Human Translation -->
+
+	<!-- Translation Steps -->
+
+	<section id="translation-steps">
+		<div class="container">
+			<div class="row text-center steps-heading">
+				<h1>Trusted Human Translation When you Need it!</h1>
+				<p>The Most Trusted Translation Services</p>				
+			</div>
+			<div class="row">
+				<div class="steps-container">
+					<div class="col-sm-3 text-center step">
+						<span class="wow flipInY" data-wow-duration="1s"><img src="images/steps-flag.png" alt="flag"></span>
+						<p>1.Select Language</p>
+						<img class="steps-arrow" src="images/steps-arrow.png" alt="arrow">
+					</div>
+					<div class="col-sm-3 text-center step">
+						<span class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.2s"><i class="fa fa-file-text-o"></i></span>
+						<p>2.Upload your Text</p>
+						<img class="steps-arrow" src="images/steps-arrow.png" alt="arrow">
+					</div>
+					<div class="col-sm-3 text-center step">
+						<span class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.4s"><i class="fa fa-clock-o"></i></span>
+						<p>3.Set Deadline</p>
+						<img class="steps-arrow" src="images/steps-arrow.png" alt="arrow">
+					</div>
+					<div class="col-sm-3 text-center step">
+						<span class="wow flipInY" data-wow-duration="1s" data-wow-delay="0.6s"><i class="fa fa-money"></i></span>
+						<p>4.Price</p>						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Translation Steps -->
+
+
+	
+	<!-- Community -->
+
+	<section id="our-community" class="module parallax parallax-3">
+		<div class="container">
+			<div class="row text-center">
+				<h1 class="section-heading wow fadeInDown" data-wow-duration="0.5s">Join our Translator Community</h1>
+			
+				<div class="section-seperator">
+					<span></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="community-container">
+					<div class="col-sm-5 community-image">
+						<img class="img-responsive" src="images/community-left-image.png" alt="community">
+					</div>
+					<div class="col-sm-7">
+						<div class="community-text-box wow rotateInUpLeft" data-wow-duration="0.5s">
+							<ul class="communitySlider">
+								<li>
+									<p>
+										Translator has allowed me to find a passion for a new career and the ability to work from home at times that suit me while spending quality time with my Kids.
+									</p>
+									<p class="community-title">Lewis Razer - <span>Spain</span></p>
+									<i class="fa fa-quote-left"></i>
+								</li>
+								<li>
+									<p>
+										Translator has allowed me to find a passion for a new career and the ability to work from home at times that suit me while spending quality time with my Kids.
+									</p>
+									<p class="community-title">Lewis Razer - <span>Spain</span></p>
+									<i class="fa fa-quote-left"></i>
+								</li>
+								<li>
+									<p>
+										Translator has allowed me to find a passion for a new career and the ability to work from home at times that suit me while spending quality time with my Kids.
+									</p>
+									<p class="community-title">Lewis Razer - <span>Spain</span></p>
+									<i class="fa fa-quote-left"></i>
+								</li>
+							</ul>
+						</div>
+						<p class="text-center become-translator">
+							<span>Over 15,00 Dedicated Professional Translators</span>
+							<br>
+							<a href="translators.html" class="btn btn-gray">
+								Become a Translator
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Community -->
+
+	<!-- Footer -->
+<!-- ContactUs -->
+	
+	<section id="contactUs">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h2 class="contact-heading">Nice to Hear from you</h2>
+					<p class="contact-desc">
+						If you have any suggestions or questions, please do not hesitate to contact us
+					</p>
+					<div class="col-sm-6 no-left-padding">
+						<div class="region-address">
+							<h2>Finland</h2>
+							<p class="address">
+								<i class="fa fa-map-marker"></i>
+								<span>
+									 Espoo 
+								</span>
+							</p>
+							<p class="telephone">
+								<i class="fa fa-phone"></i>
+								<span>
+									  Telephone: +46 123 456789
+								</span>
+							</p>
+							<p class="email">
+								<i class="fa fa-envelope"></i>
+								<span>
+									<a href="mailto:info@example.com" target="_top">
+										E-mail: info@example.com
+									</a>
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="region-address">
+							<h2>China</h2>
+							<p class="address">
+								<i class="fa fa-map-marker"></i>
+								<span>
+									 Translator China
+								</span>
+							</p>
+							<p class="telephone">
+								<i class="fa fa-phone"></i>
+								<span>
+									  Telephone: +00 123 456789
+								</span>
+							</p>
+							<p class="email">
+								<i class="fa fa-envelope"></i>
+								<span>
+									<a href="mailto:info@example.com" target="_top">
+										E-mail: info@example.com
+									</a>
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div id="contact-form">
+						<div class="expMessage"></div>
+						<form class="translator-form">
+							<input type="text" name="formInput[name]" id="name" class="form-control half-wdth-field" placeholder="Name" required>
+							<input type="email" name="formInput[email]" id="name" class="form-control half-wdth-field pull-right" placeholder="Email" required>
+
+							<select name="formInput[Topic]" id="topic" class="form-control selectpicker" required>
+							  	<option value="" default>choose a topic</option>
+								<option value="chines">Chines</option>
+								<option value="urdu">Urdu</option>
+							  	<option value="arabic">Arabic</option>
+							  	<option value="english">English</option>
+							  	<option value="rusian">Rusian</option>						  	
+							</select>							
+
+							<input type="text" name="formInput[phone]" id="phone" class="form-control half-wdth-field" placeholder="phone" required>
+							<input type="text" name="formInput[country]" id="country" class="form-control half-wdth-field pull-right" placeholder="Country" required>
+
+							<textarea name="formInput[message]" id="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+							<input type="hidden" name="action" value="submitform">
+							<div class="text-center">
+								<button type="submit" value="submit" class="btn btn-gray">
+									Submit Now!
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ContactUs -->
+
+	<!-- Footer -->
+
+	<!-- CopyRight -->
+	
+	<section id="copyRight">
+		<div class="container">
+			<div class="row text-center">
+				<p>
+					All Rights Reserved by Translator Team
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- CopyRight -->
+
+	
+	<!-- Scripts -->
+	<script src="js/translator.js" type="text/javascript"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.bxslider-rahisified.min.js"></script>
+	<script src="js/jquery.custom-file-input.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/custom.js"></script>	
+
+	
+	
+</body>
+</html>

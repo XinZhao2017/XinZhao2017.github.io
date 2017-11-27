@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+	<meta charset="UTF-8">
+	<title>Translator</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	
+	<!-- Style Sheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/hover-min.css" />
+	<link rel="stylesheet" href="css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+</head>
+<body>
+<!-- Loader -->
+	<div id="loader">
+		<h1 class="loader">
+		  <span class="loaderTxt let1">T</span>  
+		  <span class="loaderTxt let2">r</span>  
+		  <span class="loaderTxt let3">a</span>  
+		  <span class="loaderTxt let4">n</span>  
+	 	  <span class="loaderTxt let5">s</span>  
+		  <span class="loaderTxt let6">l</span>  
+		  <span class="loaderTxt let7">a</span>  
+		  <span class="loaderTxt let8">t</span>  
+		  <span class="loaderTxt let9">o</span>  
+		  <span class="loaderTxt let10">r</span>  
+		</h1>
+	</div>
+	<!-- Loader -->
+	
+	<!-- TopBar -->
+	
+	<section id="topbar">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<div class="top-menu">
+						<ul class="list-unstyled list-inline">
+							<li><a data-hover="Home" href="index.html">Home</a></li>
+							<li><a data-hover="About" href="about.html">About</a></li>
+							<li><a data-hover="Blog" href="blog.html">Blog</a></li>
+							<li><a data-hover="Support" href="#">Support</a></li>
+							<li><a data-hover="Help" href="#">Help</a></li>
+						</ul>
+					</div>					
+				</div>
+				<div class="col-sm-3">
+					<div class="user-acces pull-right">
+						<a href="login.html">Login</a>
+						<span>&#47;</span>
+						<a href="register.html">Register</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TopBar -->
+
+	<!-- Main-Navigation -->
+	
+	<section id="main-navigation">
+	    <div id="navigation">
+	        <nav class="navbar navbar-default" role="navigation">
+	            <div class="container">
+	                <div class="row">
+	                    <!--  Brand and toggle get grouped for better mobile display -->
+	                    <div class="col-md-3 col-sm-12 col-xs-12">
+		                    <div class="navbar-header">
+		                        
+		                        <a class="navbar-brand logo col-xs-10" href="index.html">
+		                            <img src="images/logo.png" alt="logo" class="img-responsive"> 
+		                        </a>
+		                        <div class="col-xs-2 text-center">
+		                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-collapse-navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		                        </div>
+		                    </div>
+	                    </div>
+	                    <!--  Collect the nav links, forms, and other content for toggling --> 
+	                    <div class="col-md-9 col-sm-12 col-xs-12 pull-right">
+		                    <div class="collapse navbar-collapse nav-collapse" id="fixed-collapse-navbar">
+		                        <ul class="nav navbar-nav cl-effect-1">
+		                            <li><a href="index.html" data-hover="Translation">Translation</a> </li>
+		                            <li><a href="languages.html" data-hover="Languages">Languages</a> </li>
+		                            <li class="active"><a href="services.html" data-hover="Services">Services</a> </li>
+		                            <li><a href="translators.html" data-hover="Translators">Translators</a> </li>
+		                            <li><a href="prices.html" data-hover="Prices">Prices</a> </li>
+		                            <li><a href="contact.html" data-hover="Contact">Contact</a></li>
+		                        </ul>
+		                        <div class = "btn-group pull-right translate-dropdown">
+								   <button type = "button" class = "btn btn-translate dropdown-toggle" data-toggle = "dropdown">
+								      <span class="flag-image">
+								      	<img src="images/uk.png" alt="flag">
+								      </span>
+								      Eng								      
+								   </button>
+								   
+								   <ul class = "dropdown-menu" role = "menu">
+								      <li>
+										<!-- <span class="flag-image">
+											<img src="images/saudia.png" alt="flag">
+										</span> -->
+								      	<a href = "#">
+											<img class="trnslate-img" src="images/saudia.png" alt="flag">
+								      		Saudi Arabia
+								      	</a>
+								      </li>
+								      <li>
+										<!-- <span class="flag-image">
+											<img src="images/china.png" alt="flag">
+										</span> -->
+								      	<a href = "#">
+											<img class="trnslate-img" src="images/china.png" alt="flag">
+								      		China
+								      	</a>
+								      </li>
+								      <li>
+										<!-- <span class="flag-image">
+											<img src="images/rusia.png" alt="flag">
+										</span> -->
+								      	<a href = "#">
+											<img class="trnslate-img" src="images/rusia.png" alt="flag">
+								      		Rusia
+								      	</a>
+								      </li>
+								   </ul>								   
+								</div>
+		                    </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </nav>
+	    </div>
+	</section>
+
+	<!-- Main-Navigation -->
+
+	<!-- Page-Bar -->
+		
+	<section id="pageBar">
+		<div class="container">
+			<div class="row">
+				<h1 class="page-title pull-left">Services</h1>
+				<ol class="breadcrumb pull-right">
+				  <li><a href="index.html">Home</a></li>				  
+				  <li>Services</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+
+	<!-- Page-Bar -->
+
+	<!-- Services Info -->
+	
+	<section id="servicesInfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-sm-12">
+					<h3>
+						Professional online Translation Services for all your Websites and Documents
+					</h3>
+					<p>
+						Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco. Duis autem vel eum iriure dolor in hendrerit in vulputate velit. Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco. Duis autem vel eum iriure dolor in hendrerit in vulputate velit. 
+					</p>
+					<p>
+						Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem seqi nesciunt. 
+					</p>
+				</div>
+				<div class="col-md-5 col-sm-8 col-sm-offset-2 col-xs-offset-0 col-md-offset-0 overflow-hidden services-img-container">
+					<img class="img-responsive wow fadeIn" data-wow-duration="1s" src="images/services-img.jpg" alt="service image">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Info -->
+
+	<!-- Services Offer -->
+	
+	<section id="servicesOffer">
+		<div class="container">
+			<div class="row text-center">
+				<h1 class="section-heading wow fadeInDown" data-wow-duration="0.5s">
+					Translation Services we offer
+				</h1>
+				<p class="section-desc wow fadeIn" data-wow-duration="0.5s">
+					empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit ation ullamco. Duis autem vel eum iriure dolor in hendrerit in vulputate velit. 
+				</p>
+				<div class="section-seperator">
+					<span></span>
+				</div>
+			</div>
+			<div class="row overflow-hidden">
+				<div class="services-container">
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s">
+							<i class="fa fa-laptop"></i>
+							<h3>Website Translation</h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s">
+							<i class="fa fa-youtube-play"></i>
+							<h3>Video Subtitle Translation</h3>
+						</div>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s">
+							<i class="fa fa-windows"></i>
+							<h3>Software Translation</h3>
+						</div>
+					</div>					
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s">
+							<i class="fa fa-bar-chart-o"></i>
+							<h3>Adwords Translation</h3>
+						</div>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="clearfix visible-md visible-lg"></div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+							<i class="fa fa-headphones"></i>
+							<h3>Transcription</h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+							<i class="fa fa-mobile"></i>
+							<h3>App Translation</h3>
+						</div>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+							<i class="fa fa-desktop"></i>
+							<h3>Desktop Publishing</h3>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="services-box text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+							<i class="fa fa-certificate"></i>
+							<h3>Certifications</h3>
+						</div>
+					</div>
+					<div class="clearfix visible-sm"></div>
+					<div class="clearfix visible-md visible-lg"></div>
+				</div>
+			</div>
+					
+		</div>
+	</section>
+
+	<!-- Services Offer -->
+
+	<!-- Testimonial Carousel -->
+
+	<div id="testimonial">
+		<div class="container">
+			<div class="row text-center">
+				<div id="bx-pager">
+				  <a data-slide-index="0" href="">
+				  	<img class="img-circle" src="images/testimonial-thumb-1.png" alt="thmub" />
+				  </a>
+				  <a data-slide-index="1" href="">
+				  	<img class="img-circle" src="images/testimonial-thumb-2.png" alt="thumb" />
+				  </a>
+				  <a data-slide-index="2" href="">
+				  	<img class="img-circle" src="images/testimonial-thumb-3.png" alt="thumb" />
+				  </a>
+				</div>
+
+				<ul class="testimonial-slider">
+				  <li>
+					<div class="testimonial-content">
+						<p>
+							Gengo’s innovative and professional translation services are an ideal a ddition to our enterprise content management solution.
+						</p>
+						<h2>
+							Jeff Kane, Product Manager, Lodles 
+						</h2>
+					</div>			  		
+				  </li>
+				  <li>
+					<div class="testimonial-content">
+						<p>
+							Gengo’s innovative and professional translation services are an ideal a ddition to our enterprise content management solution.
+						</p>
+						<h2>
+							Jeff Kane, Product Manager, Lodles 
+						</h2>
+					</div>			  		
+				  </li>
+				  <li>
+					<div class="testimonial-content">
+						<p>
+							Gengo’s innovative and professional translation services are an ideal a ddition to our enterprise content management solution.
+						</p>
+						<h2>
+							Jeff Kane, Product Manager, Lodles 
+						</h2>
+					</div>			  		
+				  </li>
+				</ul>				
+			</div>
+		</div>
+	</div>
+
+	<!-- Testimonial Carousel -->
+
+	<!-- Serve Client -->
+	
+	<div id="serveClient">
+		<div class="container">
+			<div class="row text-center">
+				<h1 class="section-heading">We serve 30,641 Customer</h1>
+				<ul class="list-inline list-unstyled serveClient-logo">
+					<li><img src="images/cl-logo-3.png" alt="Client Image"></li>
+					<li><img src="images/cl-logo-1.png" alt="Client Image"></li>
+					<li><img src="images/cl-logo-5.png" alt="Client Image"></li>
+					<li><img src="images/cl-logo-2.png" alt="Client Image"></li>
+					<li><img src="images/cl-logo-5.png" alt="Client Image"></li>
+					<li><img src="images/cl-logo-3.png" alt="Client Image"></li>
+					<li><img src="images/cl-logo-4.png" alt="Client Image"></li>
+				</ul>				
+			</div>
+		</div>
+	</div>
+
+	<!-- Serve Client -->
+
+	<!-- Footer -->
+	
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-box wow fadeIn" data-wow-duration="0.5s">
+						<h4 class="footer-heading">About Translator</h4>
+						<div class="section-seperator">
+							<span></span>
+						</div>
+						<div class="footer-text">
+							<p>
+								Lorem ipsum dolor sit amet, co nsectetur adipiscing elit. Integer lorem quam, adipiscing condime ntum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-box wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
+						<h4 class="footer-heading">Quick Links</h4>
+						<div class="section-seperator">
+							<span></span>
+						</div>
+						<div class="footer-text">
+							<ul class="list-unstyled">
+								<li><a class="f-link-hover" data-hover="About" href="about.html">About</a></li>
+								<li><a class="f-link-hover" data-hover="Translator" href="translation.html">Translator</a></li>
+								<li><a class="f-link-hover" data-hover="Languages" href="languages.html">Languages</a></li>
+								<li><a class="f-link-hover" data-hover="Services" href="services.html">Services</a></li>
+								<li><a class="f-link-hover" data-hover="Translators" href="translator.html">Translators</a></li>
+								<li><a class="f-link-hover" data-hover="Prices" href="prices.html">Prices</a></li>
+								<li><a class="f-link-hover" data-hover="Contact" href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-box wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
+						<h4 class="footer-heading">Services</h4>
+						<div class="section-seperator">
+							<span></span>
+						</div>
+						<div class="footer-text">
+							<ul class="list-unstyled">
+								<li><a class="f-link-hover" data-hover="Technical Translation" href="#">Technical Translation</a></li>
+								<li><a class="f-link-hover" data-hover="Business &amp; Finance" href="#">Business &amp; Finance</a></li>
+								<li><a class="f-link-hover" data-hover="Legal Translation" href="#">Legal Translation</a></li>
+								<li><a class="f-link-hover" data-hover="Medical Translation" href="#">Medical Translation</a></li>
+								<li><a class="f-link-hover" data-hover="Patent Translation" href="#">Patent Translation</a></li>
+								<li><a class="f-link-hover" data-hover="Website Translation" href="#">Website Translation</a></li>
+								<li><a class="f-link-hover" data-hover="Mobile App" href="#">Mobile App</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="footer-box wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.6s">
+						<h4 class="footer-heading">Get In Touch</h4>
+						<div class="section-seperator">
+							<span></span>
+						</div>
+						<div class="footer-text intouch">
+							<p>
+								<i class="fa fa-envelope"></i>
+								<a href="mailto:info@domain.com">info@domain.com</a>
+							</p>
+							<p>
+								<i class="fa fa-phone"></i>
+								<span>0800-123-456-789 Free</span>
+							</p>
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+
+	<!-- CopyRight -->
+	
+	<section id="copyRight">
+		<div class="container">
+			<div class="row text-center">
+				<p>
+					All Rights Reserved &copy; Translator Template | By ewebcraft
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- CopyRight -->
+
+	<!-- Scripts -->
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.custom-file-input.js"></script>
+	<script src="js/jquery.bxslider-rahisified.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>

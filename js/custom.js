@@ -216,6 +216,7 @@ $(window).load(function(){
 				$("#clear_lan").click(function(){
 					$("#lang-input").val("");
 					$("#lang-output").val("");
+					
 					});
 				
 				
@@ -232,9 +233,12 @@ $(window).load(function(){
 			
 			
 				$("#down_load").click(function(){
-					$("#down_load").text("Download Successfully!");
+
+					setTimeout(function(){$("#su_download").css("display","none");},3000);
+					$("#su_download").text("Download Successfully!");
+					$("#su_download").show();
 				});
-			
+
 			
 			});
 			

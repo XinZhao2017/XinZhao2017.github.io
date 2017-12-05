@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" type="text/css" href="css/loader.css">
 	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	
@@ -48,65 +47,62 @@
 	        <nav class="navbar navbar-default" role="navigation">
 	            <div class="container">
 	                <div class="row">
-					
-	                    <!--  Brand and toggle get grouped for better mobile display -->
+						<!--  Brand and toggle get grouped for better mobile display -->
 	                    <div class="col-md-3 col-sm-12 col-xs-12">
 		                    <div class="navbar-header">
-		                        
 		                        <a class="navbar-brand logo col-xs-10" href="index.html">
 		                            <img src="images/logo.png" alt="logo" class="img-responsive"> 
 		                        </a>
 		                        <div class="col-xs-2 text-center">
-		                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-collapse-navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+		                        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#fixed-collapse-navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 		                        </div>
 		                    </div>
 	                    </div>
 	                    <!--  Collect the nav links, forms, and other content for toggling --> 
 	                    <div class="col-md-9 col-sm-12 col-xs-12 pull-right">
-	                    <div class="col-md-9 col-sm-12 col-xs-12 pull-right">
+	                    	<div class="col-md-9 col-sm-12 col-xs-12 pull-right">
 						
 						
-					
-		                    <div class="collapse navbar-collapse nav-collapse" id="fixed-collapse-navbar">
-		                        <ul class="nav navbar-nav cl-effect-1">
-		            
-		                           <li><a href="#human-translation"" data-hover="Services">Services</a> </li>
-		                            <li><a href="translators.html" data-hover="Translators">Translators</a> </li>
-		                        </ul>
+		                    	<div class="collapse navbar-collapse nav-collapse" id="fixed-collapse-navbar">
+									<ul class="nav navbar-nav cl-effect-1">
+									   <li><a href="#human-translation"" data-hover="Services">Services</a> </li>
+										<li><a href="translators.html" data-hover="Translators">Translators</a> </li>
+									</ul>
 						
-		                        <div class = "btn-group translate-dropdown">
-								   <button type = "button" class = "btn btn-translate dropdown-toggle" data-toggle = "dropdown">
-								      <span class="flag-image">
-								      	<img src="images/uk.png" alt="flag">
-								      </span>
-								      Eng								      
-								   </button>
-								   <ul class = "dropdown-menu" role = "menu">
-								      <li>										
-								      	<a href = "#">
-											<img class="trnslate-img" src="images/saudia.png" alt="flag">
-								      		Saudi Arabia
-								      	</a>
-								      </li>
-								      <li>										
-								      	<a href = "#">
-											<img class="trnslate-img" src="images/china.png" alt="flag">
-								      		China
-								      	</a>
-								      </li>
-								      <li>										
-								      	<a href = "#">
-											<img class="trnslate-img" src="images/rusia.png" alt="flag">
-								      		Rusia
-								      	</a>
-								      </li>
-								   </ul>								   
-								</div>
-								
+									<div class = "btn-group translate-dropdown">
+
+									   <button type = "button" class = "btn btn-translate dropdown-toggle" data-toggle = "dropdown">
+										  <span class="flag-image">
+											<img src="images/uk.png" alt="flag">
+										  </span>
+										  Eng
+									   </button>
+									   <ul class = "dropdown-menu" role = "menu">
+										  <li>
+											<a href = "#">
+												<img class="trnslate-img" src="images/saudia.png" alt="flag">
+												Saudi Arabia
+											</a>
+										  </li>
+										  <li>
+											<a href = "#">
+												<img class="trnslate-img" src="images/china.png" alt="flag">
+												China
+											</a>
+										  </li>
+										  <li>
+											<a href = "#">
+												<img class="trnslate-img" src="images/rusia.png" alt="flag">
+												Rusia
+											</a>
+										  </li>
+									   </ul>
+									</div>
+
 									<div class="user-acces pull-right">
-									<a href="login.html">Login</a>
-									<span>&#47;</span>
-									<a href="register.html">Register</a>
+										<a href="login.html">Login</a>
+											<span>&#47;</span>
+										<a href="register.html">Register</a>
 								</div>
 								
 		                    </div>
@@ -129,75 +125,84 @@
 				<div id="translator">
 					<form class="translation-form">
 						<div class="col-sm-6">						
-							<div class="language-bar">
-								<select name="lang-detection" id="lang-detection" class="form-control selectpicker">
-								<option value="Input Language">Input Language</option>
+							<div class="language-bar"  style="margin-left: 5%" >
+								<select name="lang-detection"  id="lang-detection" class="form-control selectpicker">
+								<option value="Detect Language">Detect Language</option>
 								<option value="Chinese">Chinese</option>
 								<option value="Finnish">Finnish</option>
-								<option value="arabic">Arabic</option>
-								<option value="english">English</option>
-								<option value="rusian">Rusian</option>						  	
+								<option value="Arabic">Arabic</option>
+								<option value="English">English</option>
+								<option value="Rusian">Rusian</option>
 								</select>		
-								
-								<button  id="detect_lan" type="button" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s">
-								detect_language
-								</button> 
-							
-								<button type="button" id="change_lan"   style="padding: 16px 10px;" class="btn btn-swap pull-right">
-								<i class="fa fa-long-arrow-right swap-right"></i> 
+							</div>
+							<div>
+								<button type="button" id="change_lan"   style="margin-bottom: 0%; padding: 16px 10px;" class="btn btn-swap pull-right">
+								<i class="fa fa-long-arrow-right swap-right"></i>
 								<i class="fa fa-long-arrow-left swap-left"></i>
 								</button>
 						  	</div>
 							
 							<div class="language-area">
-								<textarea class="form-control wow fadeIn" data-wow-duration="0.5s" name="lang-input" id="lang-input" rows="10"></textarea>
+								<textarea class="form-control wow fadeIn" data-wow-duration="0.5s" name="lang-input" id="lang-input" rows="10">type a word or a web address</textarea>
 							</div>
-							 <p class="upload-info wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
-						  		Type text or a website address or
-						  		<input type="file" name="file-1" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected" multiple />
-								<label for="file-1"><span>Upload a Document</span></label>
-						  	</p>
+
+							<div>
+								<label>
+									<span class="btn btn-green btn-instant-translate wow fadeIn small-button  data-wow-duration="0.5s"><span class="glyphicon glyphicon-open"></span>
+										Browse&hellip; <input id="my-file-selector" type="file" style="display:none;" onchange="$('#upload-file-info').val($(this).val());">
+									</span>
+								</label>
+								<input type="text" class="form-control" id="upload-file-info" readonly>
+								<button  id="submit"  type="button" style="margin-left: 105%; margin-top: -10%" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s"><span class="glyphicon glyphicon-open"></span>Submit</buttton>
 							
+							</div>
 						</div>
 
+					
+				
 
-						<div class="col-sm-6">
-							<div class="language-bar">
-							  
-								<button  id="clear_lan" type="button" style="margin-left: 16px; margin-right: 259px" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s" pull-right>
-									clear
-								</button> 
 
-								<select name="lang-detection"  id="outPutLanguage" class="form-control selectpicker">
+
+						<div class="col-sm-6" >
+							<div>
+								<button id="clear_lan" type="button" style="margin-left: 4%; margin-right: 259px; margin-bottom: -13px" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s" pull-right>
+									<span class="glyphicon glyphicon-trash" style="margin-left: 361"></span>clear
+								</button>
+							</div>
+							<div  style="margin-left: 62%;  margin-top: -6% " class="language-bar">
+								<select name="lang-detection"  id="outPutLanguage"  class="form-control selectpicker">
 									<option value="Output Language">Output Language</option>
 									<option value="Chinese">Chinese</option>
 									<option value="Finnish">Finnish</option>
-									<option value="arabic">Arabic</option>
-									<option value="english">English</option>
-									<option value="rusian">Rusian</option>						  	
+									<option value="Arabic">Arabic</option>
+									<option value="English">English</option>
+									<option value="Rusian">Rusian</option>
 								</select>
-						  	</div>
-							
-						  	<div class="language-area">
-						  		<textarea class="form-control wow fadeIn" data-wow-duration="0.5s" name="lang-output" id="lang-output" rows="10"></textarea>
-						  	</div>
-							
-							 <p class="upload-info wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
-								<button  id="down_load"  type="button" style="margin-left: 50px" class="btn btn-green btn-instant-translate wow fadeIn small-button" data-wow-duration="0.5s">
-								Download</button>							
-								<p id="su_download" style="margin-left: 260px; margin-top: 60px" font-size="200%" class="section-heading wow fadeInDown"></p>								
-							</p>
-					
-						</div>
-						
-						<div class="clearfix"></div>
-						<div class="text-center translate-option">
-							<button  id="translation_button" type="button" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s">
-								Translate
-							</button>
-						</div>	
-					</form>
+							 </div>
 
+							<div  style="margin-left: -1%;"margin-top: 0% " class="language-area">
+								<textarea class="form-control wow fadeIn" data-wow-duration="0.5s" name="lang-output" id="lang-output" rows="10"></textarea>
+							</div>
+							<div>
+								 <p class="upload-info wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.3s">
+									<button  id="down_load"  type="button" style="margin-left: 147px; margin-top: 15px" class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s">
+									<span class="glyphicon glyphicon-download-alt" >Download</button>
+									<p id="su_download" style="margin-left: 260px; margin-top: 10px" font-size="200%" class="section-heading wow fadeInDown"></p>
+								</p>
+
+							</div>
+
+							
+							<div class="text-center translate-option">
+								<button  id="translation_button" type="button" style="margin-left: -24%; margin-top: 60px"   class="btn btn-green btn-instant-translate wow fadeIn" data-wow-duration="0.5s">
+									Translate
+								</button>
+							</div>
+					
+
+						</div>
+					</form>
+			
 				</div>
 			</div>
 		</div>

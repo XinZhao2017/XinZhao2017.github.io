@@ -196,30 +196,63 @@ $(window).load(function(){
 			/* Translator */
 			
 			$(document).ready(function(){
-
+				
+				if (navigator.language == "zh-TW" ){
+						
+						$("#outPutLanguage").val('Chinese');
+						$('.selectpicker').selectpicker('refresh')
+					}
+				
 				$("#translation_button").click(function(){
 					if ($("#lang-input").val()=="good")
-						$("#lang-output").val("Dolly Duck");					
+						$("#lang-output").val("hao");					
 				});
 
-				$("#detect_lan").click(function(){
-					if($("#lang-input").val()=="good"){
-						$("#lang-detection").val('english');
-						$('.selectpicker').selectpicker('refresh')}
-						
-					else if($("#lang-input").val()=="www.google.com"){
-						$("#lang-detection").val('english');
-						$('.selectpicker').selectpicker('refresh')}
-					});
+				$(function() {
+						var inputEl = $("#lang-input"),
+							defVal = inputEl.val();
+						inputEl.bind({
+							focus: function() {
+								var _this = $(this);
+								if (_this.val() == defVal) {
+									_this.val('');
+								}
+							},
+							blur: function() {
+								var _this = $(this);
+								if (_this.val() == '') {
+									_this.val(defVal);
+								}
+							}
+						});
+					})
+	
+				$("#down_load").click(function(){
+
+					setTimeout(function(){$("#su_download").css("display","none");},3000);
+					$("#su_download").text("Download Successfully!");
+					$("#su_download").show();
+				});
+		
+			
+				$("#submit").click(function(){
+					setTimeout(function(){$("#su_download").css("display","none");},3000);  
+					$("#su_download").text("submit Successfully!");					
+					$("#su_download").show();
+				
+				});
 				
 				
 				$("#clear_lan").click(function(){
 					$("#lang-input").val("");
+					
+					if (navigator.language == "zh-TW" ){
+						$("#outPutLanguage").val('Chinese');
+						$('.selectpicker').selectpicker('refresh')
+					}
 					$("#lang-output").val("");
 					
 					});
-				
-				
 				
 				$("#change_lan").click(function(){	
 					
@@ -228,18 +261,75 @@ $(window).load(function(){
 						var temp = $('#lang-detection').val();				
 						$("#lang-detection").val($("#outPutLanguage").val());					 
 						$("#outPutLanguage").val(temp);
-					$('.selectpicker').selectpicker('refresh')}
+						$('.selectpicker').selectpicker('refresh')}
 				});				
 			
-			
-				$("#down_load").click(function(){
-
-					setTimeout(function(){$("#su_download").css("display","none");},3000);
-					$("#su_download").text("Download Successfully!");
-					$("#su_download").show();
+                   
+				$(function() {
+	 
+					$("#lang-input").keyup(function() { 
+						if ($("#lang-input").val() == "good") {		   
+						  $("#lang-detection").val('English');
+						  $('.selectpicker').selectpicker('refresh')
+						}
+					});
 				});
-
 			
+		
+				$("#sel_btn").click(function(){
+								$("#myFileInput").click();
+					 
+						});
+				   
+		
+								
+				$("#try").click(function(){
+					$("#ulList").empty();
+					var fp = $("#myFileInput");
+					var lg = fp[0].files.length; // get length
+					var items = fp[0].files;
+					var fragment = "";
+					 
+					if (lg > 0) {
+						for (var i = 0; i < lg; i++) {
+							var fileName = items[i].name; // get file name
+							var fileSize = items[i].size; // get file size 
+							var fileType = items[i].type; // get file type
+				 
+							// append li to UL tag to display File info
+							fragment += "<li>" + fileName + " (<b>" + fileSize + "</b> bytes) - Type :" + fileType + "</li>";
+						}
+			 
+						$("#ulList").append(fragment);
+					}
+				
+					
+					$("#myFileInput").change(function(){
+						$("#ulList").empty();
+						var fp = $("#myFileInput");
+						var lg = fp[0].files.length; // get length
+						var items = fp[0].files;
+						var fragment = "";
+						 
+						if (lg > 0) {
+							for (var i = 0; i < lg; i++) {
+								var fileName = items[i].name; // get file name
+								var fileSize = items[i].size; // get file size 
+								var fileType = items[i].type; // get file type
+					 
+								// append li to UL tag to display File info
+								fragment += "<li>" + fileName + " (<b>" + fileSize + "</b> bytes) - Type :" + fileType + "</li>";
+								}
+				 
+						$("#ulList").append(fragment);
+						}
+				
+				});
+				
+			});
+
+
+				
 			});
 			
 			

@@ -202,6 +202,8 @@ $(window).load(function(){
 						$("#outPutLanguage").val('Chinese');
 						$('.selectpicker').selectpicker('refresh')
 					}
+					
+				
 				
 				$("#translation_button").click(function(){
 					if ($("#lang-input").val()=="good")
